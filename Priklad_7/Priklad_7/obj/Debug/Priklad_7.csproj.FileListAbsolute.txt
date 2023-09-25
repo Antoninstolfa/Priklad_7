@@ -1,0 +1,10 @@
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\bin\Debug\Priklad_7.exe.config
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\bin\Debug\Priklad_7.exe
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\bin\Debug\Priklad_7.pdb
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csprojAssemblyReference.cache
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.Form1.resources
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.Properties.Resources.resources
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.GenerateResource.cache
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.CoreCompileInputs.cache
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.exe
+G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.pdb
