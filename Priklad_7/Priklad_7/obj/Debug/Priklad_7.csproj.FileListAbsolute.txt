@@ -8,3 +8,13 @@ G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.GenerateResou
 G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.CoreCompileInputs.cache
 G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.exe
 G:\PRG\Opakovani C#\Priklad_7\Priklad_7\obj\Debug\Priklad_7.pdb
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\bin\Debug\Priklad_7.exe.config
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\bin\Debug\Priklad_7.exe
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\bin\Debug\Priklad_7.pdb
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.AssemblyReference.cache
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.Form1.resources
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.Properties.Resources.resources
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.GenerateResource.cache
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.csproj.CoreCompileInputs.cache
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.exe
+D:\Antonín Štolfa\PRG\C# opakovani\Priklad_7\Priklad_7\Priklad_7\obj\Debug\Priklad_7.pdb

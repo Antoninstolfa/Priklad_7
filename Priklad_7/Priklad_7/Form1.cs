@@ -34,13 +34,14 @@ namespace Priklad_7
                     try
                     {
                         int pate = vstup[4];
-                        while (N != 1)
+                        while (N != 1 && N > 0)
                         {
                             pate *= pate;
                             N--;
                         }
                         N = Convert.ToInt32(textBox1.Text);
-                        MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + pate.ToString());
+                        label3.Text = pate.ToString();
+                        //MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + pate.ToString());
                     }
                     catch (FormatException ex)
                     {
@@ -55,19 +56,26 @@ namespace Priklad_7
                     if (N != 0)
                     {
                         podil = patecislo / N;
-                        MessageBox.Show("Podíl pátého čísla s N(" + vstup[4] + " / " + N + ") = " + podil.ToString());
+                        label5.Text = podil.ToString();
+                        //MessageBox.Show("Podíl pátého čísla s N(" + vstup[4] + " / " + N + ") = " + podil.ToString());
                     }
                     else
                     {
                         MessageBox.Show("Nelze dělit nulou!");
-                        MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + "1");
+                        label3.Text = "1";
+                        //MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + "1");
                     }
                     int soucet = 0;
                     foreach(int cislo in vstup)
                     {
                         soucet += cislo;
                     }
-                    MessageBox.Show("Soucet všech čísel ze souboru = " + soucet.ToString());
+                    label7.Text = soucet.ToString();
+                    //MessageBox.Show("Soucet všech čísel ze souboru = " + soucet.ToString());
+                }
+                catch (NullReferenceException ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
                 catch (DivideByZeroException ex)
                 {
@@ -94,6 +102,18 @@ namespace Priklad_7
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.ForeColor = Color.Gold;
+            button1.BackColor = Color.DarkGreen;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.ForeColor = Color.LawnGreen;
+            button1.BackColor = Color.Black;
         }
     }
 }
