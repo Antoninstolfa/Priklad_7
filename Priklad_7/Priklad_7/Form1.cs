@@ -33,23 +33,47 @@ namespace Priklad_7
                     }
                     try
                     {
-                        int pate = vstup[4];
-                        while (N != 1 && N > 0)
+                        if(vstup.Count < 5)
                         {
-                            pate *= pate;
-                            N--;
+                            MessageBox.Show("V textovém souboru není dostatek čísel!");
                         }
-                        N = Convert.ToInt32(textBox1.Text);
-                        label3.Text = pate.ToString();
-                        //MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + pate.ToString());
-                    }
-                    catch (FormatException ex)
-                    {
-                        MessageBox.Show(ex.Message);
+                        else
+                        {
+                            int pate = vstup[4];
+                            int vysledek = pate;
+                            if(N>25)
+                            {
+                                MessageBox.Show("N je moc velké, dojde k přetečení datového typu.");
+                                label3.Text = "x";
+                            }
+                            else
+                            {
+                                while (N != 1 && N > 0)
+                                {
+                                    vysledek *= pate;
+                                    N--;
+                                }
+                                N = Convert.ToInt32(textBox1.Text);
+                                label3.Text = vysledek.ToString();
+                            }
+                        }
+                        
                     }
                     catch (OverflowException ex)
                     {
                         MessageBox.Show("Došlo k přetečení v umocňování. " + ex.Message);
+                    }
+                    catch (ArgumentOutOfRangeException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }  
+                    catch (ArithmeticException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    catch (FormatException ex)
+                    {
+                        MessageBox.Show(ex.Message);
                     }
                     double podil = 0;
                     double patecislo = vstup[4];
@@ -57,13 +81,11 @@ namespace Priklad_7
                     {
                         podil = patecislo / N;
                         label5.Text = podil.ToString();
-                        //MessageBox.Show("Podíl pátého čísla s N(" + vstup[4] + " / " + N + ") = " + podil.ToString());
                     }
                     else
                     {
                         MessageBox.Show("Nelze dělit nulou!");
                         label3.Text = "1";
-                        //MessageBox.Show("Umocněné páté číslo na N(" + vstup[4] + " na " + N + ") = " + "1");
                     }
                     int soucet = 0;
                     foreach(int cislo in vstup)
@@ -71,7 +93,10 @@ namespace Priklad_7
                         soucet += cislo;
                     }
                     label7.Text = soucet.ToString();
-                    //MessageBox.Show("Soucet všech čísel ze souboru = " + soucet.ToString());
+                }
+                catch (ArgumentOutOfRangeException ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
                 catch (NullReferenceException ex)
                 {
@@ -88,6 +113,10 @@ namespace Priklad_7
                 catch (OverflowException ex)
                 {
                     MessageBox.Show("Došlo k přetečení v součtu. " + ex.Message);
+                }
+                catch (ArithmeticException ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
                 finally
                 {
